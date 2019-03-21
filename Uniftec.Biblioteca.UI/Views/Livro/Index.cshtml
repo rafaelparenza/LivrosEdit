@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    @foreach (var livro in ViewBag.livros)
+    {
+    <tr>
+        <td>@livro.Titulo</td>
+        <td>@livro.Autor</td>
+        <td>@livro.Editora</td>
+    </tr>
+    }
+</table>
