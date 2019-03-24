@@ -31,6 +31,10 @@ namespace Uniftec.Biblioteca.UI.Controllers
         {
             return View();
         }
+        public ActionResult processarEdicaoGet(Livro livro)
+        {
+            return View();
+        }
         [HttpPost]
         public ActionResult ProcessarGravacaoPost(Livro livro)
         {

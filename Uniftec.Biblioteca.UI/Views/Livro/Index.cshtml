@@ -4,13 +4,12 @@
 }
 
 <h2>Index</h2>
-<table>
-    @foreach (var livro in ViewBag.livros)
-    {
-    <tr>
-        <td>@livro.Titulo</td>
-        <td>@livro.Autor</td>
-        <td>@livro.Editora</td>
-    </tr>
-    }
-</table>
+<table method="get" action="ProcessarEdicaoGet">
+        @foreach (var livro in ViewBag.livros)
+        {
+        <tr> <td>@livro.Titulo</td><td>Editar: <link name "@livro.Titulo"/></td> </tr>
+        <tr> <td>@livro.Autor</td><td>Editar: </td>
+        <tr> <td>@livro.Editora</td><td>Editar:  </tr>      
+        <tr></tr>
+        }
+    </table>
